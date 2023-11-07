@@ -1,0 +1,116 @@
+/* estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    user-select: none;
+}
+html, body {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+/* Estilos header */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+.contenedor-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #cdd4d8;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em; */
+}
+span{
+    font-size: .6em;
+}
+.text-header h1{
+    color: rgb(46, 49, 48);
+}
+.text-header span{
+    color: rgb(90, 95, 95);
+}
+.img-header img{
+    height: 100px;
+    width: 150px;
+}
+/* Estilos Nav */
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    background-color:#82c7b6;
+    height: 2.5em;
+}
+.header .menu a{
+    text-decoration: none;
+}
+.menu ul, li a{
+    font-size: 1.03em; /*ver si cambiar a pixeles*/
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.1s;
+    font-weight: bold;
+    color: rgb(6, 70, 6);
+}
+.menu ul, li a:hover{
+    color: rgb(41, 131, 23);
+}
+
+/* sección titulares */
+.titulares{
+    padding: 10em 1.5em;
+    background-color: #f5f7f6;
+}
+.titulares img{
+    height: 320px;
+    width: 370px;
+    padding-top: 1em;
+}
+.contenido-titulares{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+
+    border-top: 1px solid rgb(52, 134, 52);
+    border-bottom: 1px solid rgb(52, 134, 52);
+    padding-bottom: 1em;
+}
+.contenido-titulares strong{
+    color:#2e856f;
+    font-weight: bold;
+}
+.contenido-titulares p{
+    padding-top: 1.5em;
+    font-weight: bold;
+}
+
+.noticia1 ,.noticia2,.noticia3,.noticia4,.noticia5,.noticia6{
+    /* border-left: 1px solid black; */
+}
+
+/* footer */
+
+.contenido-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#82c7b6;
+}
+.contenido-footer img{
+    height: 40px;
+    width: 60px;
+}
