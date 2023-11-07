@@ -1,0 +1,31 @@
+main{
+    height: 200%;
+    background-color: #f5f7f6;
+}
+
+/* sección titulares */
+.titulares{
+    padding: 10em 1.5em;
+}
+.titulares img{
+    height: 320px;
+    width: 370px;
+    padding-top: 1em;
+}
+.contenido-titulares{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+
+    border-top: 2px solid rgb(52, 134, 52);
+    border-bottom: 2px solid rgb(52, 134, 52);
+    padding-bottom: 1em;
+}
+.contenido-titulares strong{
+    color:#2e856f;
+    font-weight: bold;
+}
+.contenido-titulares p{
+    padding-top: 1.5em;
+    font-weight: bold;
+}

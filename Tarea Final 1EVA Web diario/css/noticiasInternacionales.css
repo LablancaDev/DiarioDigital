@@ -1,0 +1,62 @@
+main{
+    height: 350%;
+    background-color: #f5f7f6;
+}
+.contenido-noticias-internacionales p{
+    font-weight: bold;
+    padding: .5em;
+  
+}
+.noticias-internacionales{
+    padding: 10em 1.5em;
+}
+.contenido-noticias-internacionales{
+    display: grid;
+    grid-template-columns: 2fr 350px;
+    gap: 1em;
+    border-top: 2px solid rgb(52, 134, 52);
+    border-bottom: 2px solid rgb(52, 134, 52);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.contenido-noticias-internacionales .noticia img{/*ajuste de tamaño de imágenes de noticias 2 y 3*/
+    height: 200px;
+    width: 320px;
+    padding: .5em;
+
+    display: block;/*se convierten los elementos img de línea a elemento de bloque ahora ocupará todo el ancho disponible de su contenedor para ajustar el margen horizontal automáticamente*/
+    margin: auto;
+}
+.contenido-noticias-internacionales .noticia span{
+    font-size: 1.7em;
+}
+.contenido-noticias-internacionales .noticia1 img{
+    height: 500px;
+    width: 820px;
+    
+    display: block;
+    margin: auto; /*se ajusta el margen de la imágen en el div de forma automática*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido-noticias-internacionales .noticia{/*selecciono la segunda clase que engloba a todas las noticias para darles marco con border y envolver cada noticia al mismo tiempo*/
+    border: 1px solid rgb(52, 134, 52);
+} 
+.contenido-noticias-internacionales .noticia3, .noticia5, .noticia7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-noticias-internacionales .noticia3 img,
+.contenido-noticias-internacionales .noticia5 img,
+.contenido-noticias-internacionales .noticia7 img{
+    height: 300px;
+    width: 400px;
+}
+
+.contenido-noticias-internacionales .noticia2 img{
+    height: 300px;
+}

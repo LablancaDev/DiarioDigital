@@ -1,0 +1,54 @@
+main{
+    height: 170%;
+    background-color: #f5f7f6;
+}
+.noticias-nacionales{
+    padding: 10em 1.5em;
+}
+.contenido-noticias-nacionales .noticia2 img,/*ajuste de tamaño de imágenes de noticias 2 y 5*/
+.contenido-noticias-nacionales .noticia5 img{
+    height: 200px;
+    width: 580px;
+    margin-bottom: .5em;
+}
+.contenido-noticias-nacionales img{ /*ajusta de tamaño del resto de imágenes de las noticias*/      /*REVISAR IMÁGEN 1 ESTÁ MÁS ALTA QUE EL RESTO*/
+    height: 180px;
+    width: 280px;
+}
+.contenido-noticias-nacionales{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1em;
+   
+
+    border-top: 2px solid rgb(52, 134, 52);
+    border-bottom: 2px solid rgb(52, 134, 52);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.contenido-noticias-nacionales .noticia{/*selecciono la segunda clase general a todas las noticias para darles un borde y envolver cada noticia al mismo tiempo*/
+    border: 1px solid rgb(52, 134, 52);
+    /* border-radius: 1em 1em; */
+
+    /* uso de flex-box para centrar el contenido de os divs de las noticias que ocupan una sóla columna en grid */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenido-noticias-nacionales p{
+    font-weight: bold;
+    padding: .5em;
+}
+.noticia2{ /*uso de flex-box para centrar el contenido del div en forma de columna con el texto arriba de la imágen de la noticia */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.noticia5{ /*uso de flex-box para centrar el contenido del div en forma de columna con el texto arriba de la imágen de la noticia */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+

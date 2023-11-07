@@ -1,4 +1,5 @@
-/* estilos generales */
+/* ESTILOS GENERALES HEADER, NAV Y FOOTER PARA LAS DIFERENTES PÁGINAS */
+
 *{
     margin: 0;
     padding: 0;
@@ -70,39 +71,14 @@ span{
     color: rgb(41, 131, 23);
 }
 
-/* sección titulares */
-.titulares{
-    padding: 10em 1.5em;
-    background-color: #f5f7f6;
-}
-.titulares img{
-    height: 320px;
-    width: 370px;
-    padding-top: 1em;
-}
-.contenido-titulares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
-
-    border-top: 1px solid rgb(52, 134, 52);
-    border-bottom: 1px solid rgb(52, 134, 52);
-    padding-bottom: 1em;
-}
-.contenido-titulares strong{
-    color:#2e856f;
-    font-weight: bold;
-}
-.contenido-titulares p{
-    padding-top: 1.5em;
-    font-weight: bold;
-}
-
 .noticia1 ,.noticia2,.noticia3,.noticia4,.noticia5,.noticia6{
     /* border-left: 1px solid black; */
 }
 
 /* footer */
+footer{
+  
+}
 
 .contenido-footer{
     display: flex;
