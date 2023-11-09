@@ -1,0 +1,20 @@
+main{
+    height: 685%;
+}
+
+.calendario{
+    padding: 10em 1.5em;
+}
+.contenido-calendario{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /*uso de la  propiedad flex-wrap para que los divs se posicionen en la siguiente fila cuando ocupen todo el ancho disponible*/
+
+    border-top: 2px solid rgb(52, 134, 52);
+    border-bottom: 2px solid rgb(52, 134, 52);
+    padding-top: 1em;
+    padding-bottom: 1em;
+ }
+.calendario h3{
+    text-align: center;
+ }

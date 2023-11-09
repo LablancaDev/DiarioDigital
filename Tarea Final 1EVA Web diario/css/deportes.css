@@ -1,3 +1,88 @@
+/* estilos generales */
 main{
-    height: 100%;
+    height: 275%;
+}
+
+.deportes{
+    padding: 10em 1.5em;
+}
+
+
+/* estilos contenido deportes */
+.contenido-deportes{
+    display: grid;
+    grid-template-columns: 350px 2fr;
+    gap: 1em;
+    border-top: 2px solid rgb(52, 134, 52);
+    border-bottom: 2px solid rgb(52, 134, 52);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.contenido-deportes img{
+    height: 200px;
+    width: 300px;
+}
+.contenido-deportes .noticia2 img{
+    height: 350px;
+    width: 800px;
+}
+
+.contenido-deportes .noticia{
+    border: 1px solid #08460d;
+    background-color: #E9ECE8;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: .5em;
+}
+
+.noticia3 img{
+    height: 320px;
+}
+.noticia3 p{
+    padding-top: 1em;
+    text-align: center;
+}
+.contenido-deportes .noticia6{
+    display: flex;  
+    align-items: center;
+    flex-direction: row; /*se ubican los elementos img y texto de forma horizontal*/ 
+    gap: .5em;
+}
+.contenido-deportes .noticia6 p{
+    font-weight: bold;
+}
+
+/*estilos div noticia 4 y subnoticias con grid*/
+.noticia4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas iguales */
+    grid-gap: 1em; /* Espacio entre las celdas */
+}
+.subnoticia {
+    background-color: #E9ECE8;
+    border: 1px solid #08460d; 
+    padding: 1em; 
+    text-align: center; /* Centra el contenido dentro de las subnoticias*/
+    
+    max-width: 300px; /* Define el ancho máximo de las subnoticias */
+    margin: 0 auto; /* Centra las subnoticias en la pantalla */
+    font-weight: bold;
+}
+.subnoticia img{
+    height: 150px;
+    width: 240px;
+}
+
+/* estilos textos deportes */
+.contenido-deportes p{
+    font-size: 1.2em;
+    
+}
+.contenido-deportes span{
+    font-size: 1.8em;
+    font-weight: bold;
+    
 }

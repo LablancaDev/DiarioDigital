@@ -16,7 +16,8 @@ html, body {
 /* Estilos header */
 
 .header{
-    position: fixed;
+    
+    position: fixed;   /*EEROR SI LO QUITO NO QUEDA EL HEADER Y NAV FIJOS PERO LOS TITULOS DE LAS PÁGINAS NO QUEDAN DETRÁS DEL HEADER, POR LO TANTO NO HARÍA FALTA PONER EL padding: 10em 1.5em;EN TODAS LAS PÁGINAS?*/
     top: 0;
     left: 0;
     right: 0;
@@ -71,6 +72,63 @@ span{
     color: rgb(41, 131, 23);
 }
 
+
+
+
+/* Estilos para el menú desplegable Deportes*/
+
+ul.nav-deportes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.nav-deportes > li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul.nav-deportes a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+ul.nav-deportes ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color:#82c7b6;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul.nav-deportes li:hover ul {
+    display: block;
+}
+
+ul.nav-deportes ul li {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+}
+
+ul.nav-deportes ul li:hover {
+    background-color: #67997c;
+}
+
+
+
+
+
+
+
+
+
+
 .noticia1 ,.noticia2,.noticia3,.noticia4,.noticia5,.noticia6{
     /* border-left: 1px solid black; */
 }
@@ -79,7 +137,6 @@ span{
 footer{
   
 }
-
 .contenido-footer{
     display: flex;
     justify-content: center;
@@ -89,4 +146,13 @@ footer{
 .contenido-footer img{
     height: 40px;
     width: 60px;
+}
+.flecha img{
+    height: 50px;
+    width: 50px;
+
+    display: block;
+    margin: auto;
+
+    cursor: pointer;
 }

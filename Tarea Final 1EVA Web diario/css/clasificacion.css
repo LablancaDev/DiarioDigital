@@ -1,0 +1,19 @@
+main{
+    height: 200%;
+}
+
+.clasificacion{
+    padding: 10em 1.5em;
+}
+.contenido-clasificacion{
+   display: flex;
+   justify-content: center;
+
+   border-top: 2px solid rgb(52, 134, 52);
+   border-bottom: 2px solid rgb(52, 134, 52);
+   padding-top: 1em;
+   padding-bottom: 1em;
+}
+h3{
+    text-align: center;
+}

@@ -7,6 +7,11 @@
     <title>Informando Tu Diario Digital: Formulario</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/formulario.css">
+    <style>
+        .error{ /*Estilos para mostrar los errores*/
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,7 +24,7 @@
                 <!-- Introducir algún contenido o imágen al centro si no eliminar -->
             </div>
             <div class="img-header">
-                <img src="./imágenes/newspaper-295480_640.png" alt="">
+                <img src="./imágenes/imgs titulares/newspaper-295480_640.png" alt="">
             </div>
         </div>
         <nav class="menu">
@@ -45,18 +50,50 @@
     </header>
     <!-- Hay que poner un section para el form?? -->
     <main>
-        <section>
-            <form action="">
-
+        <h2>Formulario</h2>
+        <div class="contenedor-formulario">
+            <form class="formulario" id="miFormulario">
+                <fieldset>
+                    <legend>Enviar carta</legend>
+                    <div class="grupo-divs">
+                        <label for="nombre">Nombre y apellidos</label>
+                        <input type="text" name="nombre" id="nombre">
+                        <span class="error" id="nombreError"></span>
+                    </div>
+                    <div class="grupo-divs">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="text" name="correo" id="correo">
+                        <span class="error" id="correoError"></span>
+                    </div>
+                    <div class="grupo-divs">
+                        <label for="email">Edad</label>
+                        <input type="text" name="edad" id="edad">
+                        <span class="error" id="edadError"></span>
+                    </div>
+                    <div class="grupo-divs">
+                        <label for="direccion">Dirección</label>
+                        <input type="text" name direccion id="direccion">
+                        <span class="error" id="direccionError"></span>
+                    </div>
+                    <div class="grupo-divs">
+                        <label for="carta">Redacción carta</label>
+                        <textarea name="carta" id="carta" cols="30" rows="5"></textarea>
+                        <span class="error" id="cartaError"></span>
+                    </div>
+                    <div class="grupo-divs envio">
+                        <input type="submit" value="Enviar" id="boton">
+                    </div>
+                </fieldset>
             </form>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="contenido-footer">
             <p>&copy; 2023 Informando Tu Diario Digital. Todos los derechos reservados.</p>
-            <img src="./imágenes/newspaper-295480_640.png" alt="">
+            <img src="./imágenes/imgs titulares/newspaper-295480_640.png" alt="">
         </div>
     </footer>
+    <script src="./javascript/validarForm.js"></script>
 </body>
 
 </html>
