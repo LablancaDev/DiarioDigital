@@ -1,7 +1,12 @@
 main{
-    height: 155%;
-    width: 100%;
+    /* height: 175%; */
+    /* width: 100%; */
     padding: 10em 1.5em;
+    /* width: 1400px;
+    margin: 0 auto; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./imgsCSS/letter-2742296_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .formulario {
     background: #E5EEF3;
@@ -17,6 +22,8 @@ main{
 .contenedor-formulario{
     border-top: 2px solid rgb(52, 134, 52);
     border-bottom: 2px solid rgb(52, 134, 52);
+    /* background: linear-gradient(rgb(40, 39, 63), rgba(60%, 20%, 60%, 50%)); */
+    /* background: linear-gradient(rgb(138, 219, 179), rgba(40, 143, 15, 0.774)); */
 }
 legend{
     text-align: center;

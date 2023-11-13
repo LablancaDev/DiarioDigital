@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informando Tu Diario Digital: Formulario</title>
+    <title>Informando El Diario Digital: Formulario</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/formulario.css">
     <style>
-        .error{ /*Estilos para mostrar los errores*/
+        .error {
+            /*Estilos para mostrar los errores*/
             color: red;
         }
     </style>
@@ -18,7 +19,7 @@
     <header class="header">
         <div class="contenedor-header">
             <div class="text-header">
-                <h1>Informando <span>Tu Diario Digital</span></h1>
+                <h1>Informando <span>El Diario Digital</span></h1>
             </div>
             <div>
                 <!-- Introducir algún contenido o imágen al centro si no eliminar -->
@@ -49,7 +50,7 @@
         </nav>
     </header>
     <!-- Hay que poner un section para el form?? -->
-    <main>
+    <main id="formulario">
         <h2>Formulario</h2>
         <div class="contenedor-formulario">
             <form class="formulario" id="miFormulario">
@@ -88,12 +89,16 @@
         </div>
     </main>
     <footer>
-        <div class="contenido-footer">
-            <p>&copy; 2023 Informando Tu Diario Digital. Todos los derechos reservados.</p>
-            <img src="./imágenes/imgs titulares/newspaper-295480_640.png" alt="">
-        </div>
-    </footer>
-    <script src="./javascript/validarForm.js"></script>
+        <footer>
+            <a href="#formulario">
+                <div class="flecha"><img src="./imágenes/imgs titulares/arrow-24846_640.png" alt="flecha-arriba"></div>
+            </a>
+            <div class="contenido-footer">
+                <p>&copy;2023 <span> Informando Tu Diario Digital. </span> Todos los derechos reservados.</p>
+                <img src="./imágenes/imgs titulares/newspaper-295480_640.png" alt="">
+            </div>
+        </footer>
+        <script src="./javascript/validarForm.js"></script>
 </body>
 
 </html>

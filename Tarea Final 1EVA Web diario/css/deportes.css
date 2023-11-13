@@ -1,6 +1,11 @@
 /* estilos generales */
 main{
-    height: 275%;
+    /* height: 275%; */
+    /* width: 1200px;
+    margin: 0 auto; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./imgsCSS/the-ball-488713_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .deportes{

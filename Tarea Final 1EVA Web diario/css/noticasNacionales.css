@@ -1,6 +1,8 @@
 main{
-    height: 170%;
+    /* height: 170%; */
     background-color: #f5f7f6;
+    /* width: 1400px;
+    margin: 0 auto; */
 }
 .noticias-nacionales{
     padding: 10em 1.5em;
@@ -28,6 +30,8 @@ main{
 }
 .contenido-noticias-nacionales .noticia{/*selecciono la segunda clase general a todas las noticias para darles un borde y envolver cada noticia al mismo tiempo*/
     border: 1px solid rgb(52, 134, 52);
+    border: 1px solid #08460d;
+    background-color: #E9ECE8;
     /* border-radius: 1em 1em; */
 
     /* uso de flex-box para centrar el contenido de os divs de las noticias que ocupan una sóla columna en grid */
@@ -38,6 +42,11 @@ main{
 .contenido-noticias-nacionales p{
     font-weight: bold;
     padding: .5em;
+}
+.contenido-noticias-nacionales strong{
+    color:#2e856f;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 .noticia2{ /*uso de flex-box para centrar el contenido del div en forma de columna con el texto arriba de la imágen de la noticia */
     display: flex;

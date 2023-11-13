@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informando Tu Diario Digital: Imágenes de actualidad global</title>
+    <title>Informando El Diario Digital: Imágenes de actualidad global</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/imagenesActualidadGlobal.css">
 </head>
@@ -13,7 +13,7 @@
     <header class="header">
         <div class="contenedor-header">
             <div class="text-header">
-                <h1>Informando <span>Tu Diario Digital</span></h1>
+                <h1>Informando <span>El Diario Digital</span></h1>
             </div>
             <div>
                 <!-- Introducir algún contenido o imágen al centro si no eliminar -->
@@ -44,16 +44,25 @@
         </nav>
     </header>
     <main>
-        <section class="imagenesActualidadGlobal">
-
+        <section class="imagenesActualidadGlobal" id="imagenes-actualidad-global">
+            <h2>Imágenes de Actualidad Global</h2>
+            <div class="contenedor-imagenesActualidadGlobal">
+                <div class="contenido-imagenesActualidadGlobal">
+                    <img src="./imágenes/imgs imagenesActualidadGlobal/EEUU.webp" alt="EEUU" id="imagen">
+                    <p id="texto">Proceso de las elecciones presidenciales de EE. UU.</p>
+                    <input type="button" value="Pulsa para ver más noticias" id="boton" class="boton">
+                </div>
+            </div>
         </section>
     </main>
     <footer>
+        <a href="#imagenes-actualidad-global"><div class="flecha"><img src="./imágenes/imgs titulares/arrow-24846_640.png" alt="flecha-arriba"></div></a>
         <div class="contenido-footer">
-            <p>&copy; 2023 Informando Tu Diario Digital. Todos los derechos reservados.</p>
+            <p>&copy;2023 <span> Informando Tu Diario Digital. </span> Todos los derechos reservados.</p>
             <img src="./imágenes/imgs titulares/newspaper-295480_640.png" alt="">
         </div>
     </footer>
+    <script src="./javascript/imagenesActualidadGlobal.js"></script>
 </body>
 
 </html>

@@ -6,12 +6,13 @@
     box-sizing: border-box;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     user-select: none;
+    scroll-behavior: smooth;/*desplazamiento suave del scroll alpulsar botón*/
 }
-html, body {
-    height: 100vh;
+ html, body {
+    height: 100vh;         
     width: 100vw;
 
-}
+} 
 
 /* Estilos header */
 
@@ -40,6 +41,9 @@ span{
 }
 .text-header h1{
     color: rgb(46, 49, 48);
+    background-color:#bec2c1;
+    border: 1px solid rgb(139, 139, 139);
+    box-shadow: 5px 5px rgb(81, 79, 79);
 }
 .text-header span{
     color: rgb(90, 95, 95);
@@ -128,16 +132,19 @@ ul.nav-deportes ul li:hover {
 
 
 
-
 .noticia1 ,.noticia2,.noticia3,.noticia4,.noticia5,.noticia6{
     /* border-left: 1px solid black; */
 }
 
+
+/*LE DOI UN ANCHO FIJO DE 1200 PX A FOOTER, CONTENIDO-FOOTER Y MAIN EN todos los archivos css con un margin auto 0 (quitar todo para dejar como estava) PARA QUE EL FOOTER Y MAIN TENGAN UN ANCHO SUFICIENTE Y EN VERSIÓN MOVILE SE VEA BIEN SIN MEDIA QUERIES*/
 /* footer */
 footer{
-  
+     /* width: 1200px;                
+     margin: 0 auto; */
 }
 .contenido-footer{
+    /* width: 1200px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,12 +154,18 @@ footer{
     height: 40px;
     width: 60px;
 }
+.contenido-footer p{
+    font-weight: bold;
+}
+.contenido-footer span{
+    font-size: 1em;
+    color: rgb(14, 155, 26);
+   
+}
 .flecha img{
     height: 50px;
     width: 50px;
-
     display: block;
     margin: auto;
-
     cursor: pointer;
 }

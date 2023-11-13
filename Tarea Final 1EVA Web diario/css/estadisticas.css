@@ -1,5 +1,10 @@
 main{
-    height: 260%;
+    /* height: 260%; */
+    /* width: 1400px;
+    margin: 0 auto; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./imgsCSS/the-ball-488713_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .estadisticas{
