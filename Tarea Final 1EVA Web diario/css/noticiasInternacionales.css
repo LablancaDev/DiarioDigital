@@ -1,8 +1,5 @@
+/* Estilos sección noticias internacionales */
 main{
-    /* height: 350%; */
-    /* background-color: #f5f7f6; */
-    /* width: 1400px;
-    margin: 0 auto; */
     background-color: #f5f7f6;
 }
 .contenido-noticias-internacionales p{
@@ -26,12 +23,13 @@ main{
     padding-top: 1em;
     padding-bottom: 1em;
 }
-.contenido-noticias-internacionales .noticia img{/*ajuste de tamaño de imágenes de noticias 2 y 3*/
+.contenido-noticias-internacionales .noticia img{
     height: 200px;
     width: 320px;
     padding: .5em;
-
-    display: block;/*se convierten los elementos img de línea a elemento de bloque ahora ocupará todo el ancho disponible de su contenedor para ajustar el margen horizontal automáticamente*/
+    
+    /*se convierten los elementos img de línea a elemento de bloque ahora ocupará todo el ancho disponible de su contenedor para ajustar el margen horizontal automáticamente*/
+    display: block;
     margin: auto;
 }
 
@@ -39,12 +37,16 @@ main{
 .contenido-noticias-internacionales .noticia span{
     font-size: 1.7em;
 }
+.contenido-noticias-internacionales .noticia strong{
+    font-size: 1.2em;
+}
 .contenido-noticias-internacionales .noticia1 img{
     height: 500px;
     width: 820px;
     
+     /*se ajusta el margen de la imágen en el div de forma automática*/
     display: block;
-    margin: auto; /*se ajusta el margen de la imágen en el div de forma automática*/
+    margin: auto;
 
     display: flex;
     flex-direction: column;
@@ -55,7 +57,7 @@ main{
     font-size: 1.8em;
 }
 
-.contenido-noticias-internacionales .noticia{/*selecciono la segunda clase que engloba a todas las noticias para darles marco con border y envolver cada noticia al mismo tiempo*/
+.contenido-noticias-internacionales .noticia{
     border: 1px solid rgb(52, 134, 52);
     border: 1px solid #08460d;
     background-color: #E9ECE8;

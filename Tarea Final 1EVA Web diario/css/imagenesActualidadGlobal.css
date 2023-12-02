@@ -1,8 +1,7 @@
+/* Estilos sección imágenes de actualidad global */
 main{
-    /* height: 200%;                               */
-    /* width: 1400px;
-    margin: 0 auto; */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./imgsCSS/news-1172463_1280.jpg);/*se usa degradado con opacidad en la imágen para poder leer textos*/
+    /*se usa degradado con opacidad en la imágen para poder leer textos mejor*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./imgsCSS/news-1172463_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -10,7 +9,7 @@ main{
     padding: 10em 1.5em;
 }
 .imagenesActualidadGlobal h2{
-    color:beige
+    color:beige;
 }
 .imagenesActualidadGlobal p{
     color: beige;
@@ -21,9 +20,7 @@ main{
 .contenido-imagenesActualidadGlobal{
     padding-top: 1em;
     padding-bottom: 1em;
-    /* background-color: rgb(212, 212, 212);
-    border-radius: 15px 15px; */
-
+   
     display: flex;
     flex-direction: column;
     justify-content: center;

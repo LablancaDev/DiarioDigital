@@ -1,29 +1,20 @@
+/* Estilos sección titulares */
 
 main{
-    /* height: 200%; */
     background-color: #f5f7f6;
-    /* width: 1400px;
-    margin: 0 auto; */
-    
 }
-
-/* sección titulares */
 .titulares{
-    padding: 10em 1.5em;
-        
-   
+    padding: 10em 1.5em; 
 }
 .titulares img{
     height: 320px;
     width: 370px;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 0 .5em 1em;
 }
-
 .contenido-titulares{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
+    display: grid;/*se establece contenedor div padre como cuadricula*/
+    grid-template-columns: 1fr 1fr 1fr;/*se crean 3 columnas de la cuadricula con el mismo ancho dentro del espacio disponible*/
+    gap: 1em; /*separación entre divs*/
 
     border-top: 2px solid rgb(52, 134, 52);
     border-bottom: 2px solid rgb(52, 134, 52);
@@ -35,20 +26,31 @@ main{
     border: 1px solid #08460d;
     background-color: #E9ECE8;
 
+    /* se convierte el contenedor padre (.noticia) de las imágenes y textos en un contenedor flexible*/
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /*se colocan los elementos hijos imágenes y textos en forma de columna*/
+    align-items: center;/*se alinean los elementos hijos al centro de forma vertical dentro del contenedor flex*/
 }
 .contenido-titulares strong{
     color:#2e856f;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 .contenido-titulares p{
     padding-top: 1.5em;
     font-weight: bold;
     padding: .5em 1em;
-
 }
+.contenido-titulares .noticia{
+    transition: all .5s;
+    cursor: pointer;
+}.contenido-titulares .noticia a{
+    text-decoration: none;
+}
+.contenido-titulares .noticia:hover{
+    background-color: rgb(195, 211, 222);
+   
+}
+
 
 

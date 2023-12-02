@@ -1,7 +1,5 @@
+/* Estilos clasificación */
 main{
-    /* height: 200%; */
-    /* width: 1400px;
-    margin: 0 auto; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./imgsCSS/the-ball-488713_1280.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,7 +10,7 @@ main{
 }
 .contenido-clasificacion{
    display: flex;
-   justify-content: center;
+   justify-content: center;/*justificado al centro*/
 
    border-top: 2px solid rgb(52, 134, 52);
    border-bottom: 2px solid rgb(52, 134, 52);

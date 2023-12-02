@@ -1,8 +1,6 @@
+/* Estilos sección noticias nacionales */
 main{
-    /* height: 170%; */
     background-color: #f5f7f6;
-    /* width: 1400px;
-    margin: 0 auto; */
 }
 .noticias-nacionales{
     padding: 10em 1.5em;
@@ -13,13 +11,14 @@ main{
     width: 580px;
     margin-bottom: .5em;
 }
-.contenido-noticias-nacionales img{ /*ajusta de tamaño del resto de imágenes de las noticias*/      /*REVISAR IMÁGEN 1 ESTÁ MÁS ALTA QUE EL RESTO*/
+
+.contenido-noticias-nacionales img{ 
     height: 180px;
     width: 280px;
 }
 .contenido-noticias-nacionales{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;/*la segunda columna ocupará 2 fracciones del ancho total disponible*/
     gap: 1em;
    
 
@@ -28,13 +27,12 @@ main{
     padding-top: 1em;
     padding-bottom: 1em;
 }
-.contenido-noticias-nacionales .noticia{/*selecciono la segunda clase general a todas las noticias para darles un borde y envolver cada noticia al mismo tiempo*/
+.contenido-noticias-nacionales .noticia{
     border: 1px solid rgb(52, 134, 52);
     border: 1px solid #08460d;
     background-color: #E9ECE8;
-    /* border-radius: 1em 1em; */
 
-    /* uso de flex-box para centrar el contenido de os divs de las noticias que ocupan una sóla columna en grid */
+    /* uso de flex-box para centrar el contenido de los divs en forma de columna y alinearlos */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,16 +46,14 @@ main{
     font-weight: bold;
     font-size: 1.2em;
 }
-.noticia2{ /*uso de flex-box para centrar el contenido del div en forma de columna con el texto arriba de la imágen de la noticia */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
+.contenido-noticias-nacionales .noticia4 img{
+    margin-bottom: .5em;
 }
-.noticia5{ /*uso de flex-box para centrar el contenido del div en forma de columna con el texto arriba de la imágen de la noticia */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
+.contenido-noticias-nacionales .noticia5 img{
+    height: 280px;
 }
+.contenido-noticias-nacionales .noticia6 img{
+    height: 280px;
+}
+
 

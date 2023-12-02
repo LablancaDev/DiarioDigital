@@ -1,19 +1,16 @@
-/* estilos generales */
+/* Estilos sección Deportes */
 main{
-    /* height: 275%; */
-    /* width: 1200px;
-    margin: 0 auto; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./imgsCSS/the-ball-488713_1280.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .deportes{
     padding: 10em 1.5em;
 }
+.deportes h2{
+    color:beige;
+}
 
-
-/* estilos contenido deportes */
 .contenido-deportes{
     display: grid;
     grid-template-columns: 350px 2fr;
@@ -22,13 +19,21 @@ main{
     border-bottom: 2px solid rgb(52, 134, 52);
     padding-top: 1em;
     padding-bottom: 1em;
+    font-weight: bold;
 }
 .contenido-deportes img{
     height: 200px;
     width: 300px;
 }
+.contenido-deportes p{
+    padding: .5em;
+}
+.contenido-deportes .noticia1 img{
+    padding-bottom: 0 1em;
+    height: 300px;
+}
 .contenido-deportes .noticia2 img{
-    height: 350px;
+    height: 400px;
     width: 800px;
 }
 
@@ -40,7 +45,7 @@ main{
     flex-direction: column;
     align-items: center;
 
-    padding: .5em;
+    padding: 1em;
 }
 
 .noticia3 img{
@@ -48,7 +53,7 @@ main{
 }
 .noticia3 p{
     padding-top: 1em;
-    text-align: center;
+   
 }
 .contenido-deportes .noticia6{
     display: flex;  
@@ -61,33 +66,36 @@ main{
 }
 
 /*estilos div noticia 4 y subnoticias con grid*/
-.noticia4 {
+ .contenido-deportes .noticia4 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas iguales */
-    grid-gap: 1em; /* Espacio entre las celdas */
+    grid-gap: .5em; /* Espacio entre las celdas */
 }
-.subnoticia {
+
+.contenido-deportes .subnoticia {
     background-color: #E9ECE8;
     border: 1px solid #08460d; 
     padding: 1em; 
-    text-align: center; /* Centra el contenido dentro de las subnoticias*/
+    
+    display: flex;
+    flex-direction: column;/*se posicionan imágenes y textos del contenido en forma de columna*/
+    align-items: center;/*alineado vertical del contenido*/
     
     max-width: 300px; /* Define el ancho máximo de las subnoticias */
     margin: 0 auto; /* Centra las subnoticias en la pantalla */
-    font-weight: bold;
+}
+.contenido-deportes .subnoticia strong{
+    color:#2e856f;
 }
 .subnoticia img{
     height: 150px;
     width: 240px;
 }
-
-/* estilos textos deportes */
 .contenido-deportes p{
     font-size: 1.2em;
-    
 }
 .contenido-deportes span{
-    font-size: 1.8em;
+    font-size: 1.7em;
     font-weight: bold;
     
 }

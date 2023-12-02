@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     user-select: none;
-    scroll-behavior: smooth;/*desplazamiento suave del scroll alpulsar botón*/
+    scroll-behavior: smooth;/*desplazamiento suave del scroll al pulsar botón flecha*/
 }
  html, body {
     height: 100vh;         
@@ -16,25 +16,21 @@
 
 /* Estilos header */
 
+/* se fija el encabezado de la página para facilitar al usuario la navegación por la web */
 .header{
-    
-    position: fixed;   /*EEROR SI LO QUITO NO QUEDA EL HEADER Y NAV FIJOS PERO LOS TITULOS DE LAS PÁGINAS NO QUEDAN DETRÁS DEL HEADER, POR LO TANTO NO HARÍA FALTA PONER EL padding: 10em 1.5em;EN TODAS LAS PÁGINAS?*/
+    position: fixed;  
+    /* se coloca el elemento en la parte superior de la ventana del navegador y se da el ancho máximo. */
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 100;/*se posiciona el encabezado siempre por encima del resto de elementos de la web al realizar scroll*/
 }
 .contenedor-header{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    /* width: 100%; */
+    display: flex;/*se convierte el contenedor y sus elementos hijos en un contenedor flexible*/
+    justify-content: space-around;/*se alinean los elementos hijos título y logo de forma horizontal dejando un espacio al centro*/
+    align-items: center;/*alineado del título y logo de forma vertical*/
     background-color: #cdd4d8;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr auto;
-    align-items: center;
-    padding-left: 2em;
-    padding-right: 2em; */
 }
 span{
     font-size: .6em;
@@ -44,6 +40,7 @@ span{
     background-color:#bec2c1;
     border: 1px solid rgb(139, 139, 139);
     box-shadow: 5px 5px rgb(81, 79, 79);
+    padding: .3em;
 }
 .text-header span{
     color: rgb(90, 95, 95);
@@ -65,7 +62,7 @@ span{
     text-decoration: none;
 }
 .menu ul, li a{
-    font-size: 1.03em; /*ver si cambiar a pixeles*/
+    font-size: 1.05em; 
     list-style: none;
     cursor: pointer;
     transition: all 0.1s;
@@ -76,8 +73,27 @@ span{
     color: rgb(41, 131, 23);
 }
 
-
-
+/* Estilos de Subrayado de las secciones del menú nav */
+.menu ul li a {
+    position: relative;
+    transition: color 0.3s ease-in-out; /* Animación de transición */
+}
+.menu ul li a::before {
+    content: '';/*se añade un elemento vacío que representa el subrayado del texto*/
+    position: absolute;/*posicionamiento sobre el elemento padre*/
+    width: 100%;/*el subrayado ocupa el 100% del contenedor padre*/
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #106d2c;
+    visibility: hidden;
+    transform: scaleX(0); /* escala inicial del subrayado */
+    transition: visibility 0s, transform 0.3s ease-in-out; /* animación de transición */
+}
+.menu ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1); /* escala del subrayado al pasar el cursor */
+}
 
 /* Estilos para el menú desplegable Deportes*/
 
@@ -88,8 +104,8 @@ ul.nav-deportes {
 }
 
 ul.nav-deportes > li {
-    position: relative;
-    display: inline-block;
+    position: relative;/*posición de referencia para los elementos hijos*/
+    display: inline-block;/*se muestran elementos li como bloques en línea*/
     margin-right: 20px;
 }
 
@@ -100,17 +116,19 @@ ul.nav-deportes a {
 }
 
 ul.nav-deportes ul {
-    display: none;
-    position: absolute;
+    display: none;/*se ocultan elementos ul hijos*/
+    position: absolute;/*se posicionan los elementos ul hijos respecto al elemento padre con position-relative*/
     list-style: none;
+    /*ajustes posición*/
     margin: 0;
     padding: 0;
+    left: 30px;
     background-color:#82c7b6;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 ul.nav-deportes li:hover ul {
-    display: block;
+    display: block; /*cuando se coloca el cursor encima de un elemento li hijo de ul con la clase nav-deportes, se mostrará un elemento ul*/
 }
 
 ul.nav-deportes ul li {
@@ -123,28 +141,7 @@ ul.nav-deportes ul li {
 ul.nav-deportes ul li:hover {
     background-color: #67997c;
 }
-
-
-
-
-
-
-
-
-
-.noticia1 ,.noticia2,.noticia3,.noticia4,.noticia5,.noticia6{
-    /* border-left: 1px solid black; */
-}
-
-
-/*LE DOI UN ANCHO FIJO DE 1200 PX A FOOTER, CONTENIDO-FOOTER Y MAIN EN todos los archivos css con un margin auto 0 (quitar todo para dejar como estava) PARA QUE EL FOOTER Y MAIN TENGAN UN ANCHO SUFICIENTE Y EN VERSIÓN MOVILE SE VEA BIEN SIN MEDIA QUERIES*/
-/* footer */
-footer{
-     /* width: 1200px;                
-     margin: 0 auto; */
-}
 .contenido-footer{
-    /* width: 1200px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,7 +156,7 @@ footer{
 }
 .contenido-footer span{
     font-size: 1em;
-    color: rgb(14, 155, 26);
+    color: rgb(67, 80, 68);
    
 }
 .flecha img{
